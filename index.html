@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario hecho con HTML y CSS.">
+    <meta name="keywords" content="formulario, accesibilidad, perfil, HTML, CSS">
+    <meta name="author" content="Alejandro Garcia">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <main class="contenedor-principal">
+
+    
+        <section class="seccion-formulario">
+            
+                <section class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" placeholder="¿Cómo te llamas?" aria-required="true">
+                </section>
+
+                <section class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" value="correo@ejemplo.com" class="entrada-error" aria-invalid="true" >
+                    <span id="error-correo" class="mensaje-error">Este correo ya está en uso</span>
+                </section>
+
+                <section class="campo">
+                    <label for="contrasena">Ingresa tu contraseña</label>
+                    <section class="caja-contrasena">
+                        <input type="password" id="contrasena" placeholder="xxxxxxxx" aria-required="true">
+                        <button type="button" class="boton-ojo" aria-label="Mostrar contraseña">👁️</button>
+                    </section>
+                </section>
+
+                <section class="campo">
+                    <label for="confirmar">Confirma tu contraseña</label>
+                    <section class="caja-contrasena">
+                        <input type="password" id="confirmar" placeholder="xxxxxxxx" aria-required="true">
+                        <button type="button" class="boton-ojo" aria-label="Mostrar contraseña">👁️</button>
+                    </section>
+                </section>
+
+                <button type="button" class="boton-enviar">Actualizar perfil</button>
+            
+        </section>
+
+       
+        <section class="seccion-progreso">
+            <section class="circulo">
+                65%
+            </section>
+            <h2>Perfil completo</h2>
+            <section class="lista-tareas">
+                <ul>
+                    <li class="completado">Crear cuenta</li>
+                    <li class="completado">Actualizar progreso</li>
+                    <li class="completado">Configurar perfil público</li>
+                    <li>Completa tu primer proyecto</li>
+                    <li>Invita a tus amigos</li>
+                </ul>
+            </section>
+        </section>
+
+    </main>
+
+</body>
+</html>
